@@ -1,0 +1,121 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 249, 249);
+}
+main {
+    margin: 5% auto;
+    border-radius: 1rem;
+    width: 80%;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    height: 100%;
+}
+section {
+    border: 1px dashed rgb(253, 77, 77);
+    border-radius: 1rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+section:nth-of-type(2n) {
+    background-color: rgb(243, 237, 237);
+}
+header {
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+nav div {
+    border: 1px solid rgb(218, 36, 36);
+    width: 100%;
+    margin: 0 0.5rem;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    color: red;
+    background-color: rgb(253, 253, 253);
+}
+nav div a {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+nav div a p{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+nav div:hover, nav div:focus {
+    border: 1px solid rgb(252, 0, 0);
+    cursor: pointer;
+    background-color: rgb(224, 28, 28);
+    color: rgb(255, 255, 255);
+    transform: scale(1.03);
+}
+footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(252, 197, 96);
+    border-top: 1px solid orangered;
+}
+
+.tlu_logo {
+    border-radius: 1rem;
+    width: 50%;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    /* transform-origin: top 0px; */
+    transform: scale(0.9, 0.9) rotate(5deg) translate(100px, 20px);
+    transition: all 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.tlu_logo:hover {
+    transform: scale(1, 1) rotate(-5deg) translate(50px, 20px);
+    border: 1px dashed coral;
+}
+
+#pic img {
+    width: 600px;
+    height: auto;
+}
+
+#openMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav div {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    main {
+        width: 100%;
+    }
+}
