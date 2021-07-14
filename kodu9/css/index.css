@@ -1,0 +1,136 @@
+.bold {
+    font-weight: bold;
+}
+
+section p::selection {
+    background-color: orange;
+}
+
+section:nth-of-type(2n) {
+    background-color: rgba(26, 33, 54, 0.473);
+}
+
+.aboutText {
+    text-align: left;
+    line-height: 1.5;
+}
+.containerEduSchools {
+    display: flex;
+    justify-content: center;
+}
+.school img{
+    height: 200px;
+    width: auto;
+}
+
+.school {
+    padding: 10px;
+    margin: 10px 50px;
+    transition: all 0.5s;
+    width: 300px;
+
+}
+.textinput {
+    width: 80%;
+}
+
+.school:hover {
+    transform: scale(1.1);
+}
+
+.submitButton {
+    margin-top: 10px;
+    padding: 6px 12px;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.reason td {
+    padding: 3px 12px;
+    text-align: right;
+}
+
+.comment textarea, input {
+    background-color: rgba(2, 12, 43, 0.541);
+    color: rgb(222, 222, 222);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 5px 5px;
+    margin: 5px 0px;
+    border-radius: 5px;
+    resize: none;
+    line-height: 1.5;
+    transition: all 1s;
+}
+
+.comment textarea:hover, input:hover {
+    background-color: rgba(2, 12, 43, 0.671);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+#comments {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0px;
+    margin-top: 0px;
+}
+.showComments, .containerComment {
+    width: 70%;
+    border: 10px solid green;
+    margin-left: 40px;
+    background-color: rgba(10, 23, 58, 0.473);
+    box-shadow: 3px 3px 5px rgba(1, 41, 65, 0.445);
+    margin: 20px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px 0px;
+}
+.containerComment {
+    width: 30%;
+    margin-right: 40px;
+    margin-left: 0px;
+    /* border: 2px solid rgb(248, 248, 248);
+    padding: 5px 10px;
+    margin: 10px 5px 10px 0px; */
+}
+
+#commentTitle {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #comments {
+        display: flex;
+        flex-direction: column;
+    }
+    .showComments, .containerComment {
+        width: 100%;
+    }
+    .submitButton {
+        width: 50%;
+        padding: 20px 50px;
+    }
+    #cpanel {
+        width: 50%;
+    }
+    .containerEduSchools {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    #comments {
+        display: flex;
+        flex-direction: column;
+    }
+    .showComments, .containerComment {
+        width: 100%;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Subtiitritega video</title>
+</head>
+<body>
+    <h1>Subtiitritega video</h1>
+    <video id="movie" width="600" controls>
+        <source src="../../../../../~rinde/media/videos/IFI_reklaam_no_audio.mp4" type="video/mp4">
+        <track id="sub_en" kind="subtitles" label="English" srclang="en" src="../../../../../~rinde/media/videos/subtitles/subtitles_en.vtt">
+        <track id="sub_et" kind="subtitles" label="Eesti" srclang="en" src="../../../../../~rinde/media/videos/subtitles/subtitles_et.vtt">
+    </video>
+    <br>
+    <button id="subtitleBtn" type="button">Vaheta keelt</button>
+    <br>
+    <p id="subtitle_place"></p>
+
+    <h3>Filtrid</h3>
+    <label for="brightness_btn">Heledus:</label>
+    <input type="range" id="brightness_btn" min="0" max="1000" value="100">
+
+    <label for="contrast_btn">Kontrast:</label>
+    <input type="range" id="contrast_btn" min="0" max="1000" value="100">
+
+    <label for="saturation_btn">Värviküllastus:</label>
+    <input type="range" id="saturation_btn" min="0" max="1000" value="100">
+
+    <label for="blur_btn">Hägustamine:</label>
+    <input type="range" id="blur_btn" min="0" max="10" value="0">
+
+    <script src="video.js"></script>
+</body>
+</html>

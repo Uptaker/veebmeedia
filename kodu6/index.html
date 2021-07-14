@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="et">
+    <head>
+        <title>Markuse kodutöö 6</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles/clock.css">
+        <script src="javascript/script.js" defer></script>
+        <script src="javascript/clock.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <section id="clockSection">
+                <h2>Kodutöö 6</h2>
+                <div id="clockWrap" class="clockWrap">
+                    <div id="clockArea" class="clockArea">
+                        <div id="clock" class="clock">
+                            <img src="../images/4tund/clock/clock_box.png" alt="kellakast">
+                            <img src="../images/4tund/clock/clock_pendulum.png" alt="kellapendel" id="pendulus" class="pendulus">
+                            <div id="clockface" class="clockface">
+                            <img src="../images/4tund/clock/clock_face.png" alt="kella numbrilaud">
+                            <img src="../images/4tund/clock/hour_hand.png" alt="kella tunniseier" id="hourhand" class="clockhand">
+                            <img src="../images/4tund/clock/minute_hand.png" alt="kella minutiseier" id="minutehand" class="clockhand">
+                            <img src="../images/4tund/clock/second_hand.png" alt="kella sekundiseier" id="secondhand" class="clockhand">
+                            </div>
+                            <img src="../images/4tund/clock/clock_frame.png" alt="kellakasti raam">
+                        </div>
+                    </div>
+                    <div id="alarm" class="alarm">
+                        <h3>Äratuskell</h3>
+                        <label for="set_alarm_btn" id="alarmLabel">Lülita äratuskell sisse</label>
+                        <br>
+                        <input type="checkbox" id="set_alarm_btn"><br><br>
+                        <input id="alarm_hour_btn" type="number" min="0" max="23" value="0" placeholder="tund">
+                        <input id="alarm_minute_btn" type="number" min="0" max="59" value="0" placeholder="min">
+
+                        <br>
+                    </div>
+                </div>
+                <button id="clock_speak_btn" type="button">Ütle kellaaeg!</button>
+                <label for="allow_bell_btn">Löö täistunnil kella</label>
+                <input type="checkbox" id="allow_bell_btn">
+            </section>
+        </main>
+    </body>
+</html>

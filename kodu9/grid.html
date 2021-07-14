@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" type="text/css" href="grid.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+<!-- Calculator -->
+<div class="calc-grid">
+    <div class="header"><i class="fas fa-calculator fa-4x"></i>
+        <div class="header-title">
+            <h2>CSS Grid Calculator</h2>
+            <p>by Markus Tammeoja</p>
+        </div>
+    </div>
+    <div class="output">
+        <div data-previous class="previous"></div>
+        <div data-current class="current"></div>
+    </div>
+    <button data-clear class="span-two clear">CLEAR</button>
+    <button class="delete" data-delete><i class="fas fa-backspace"></i></button>
+    <button class="operation" data-operation>÷</button>
+    <button class="operation" data-complex>sin</button>
+    <button class="operation" data-complex>cos</button>
+    <button class="operation"  data-complex>tan</button>
+    <button class="operation"  data-complex>sqrt</button>
+    <button data-number>1</button>
+    <button data-number>2</button>
+    <button data-number>3</button>
+    <button class="operation"  data-operation>*</button>
+    <button data-number>4</button>
+    <button data-number>5</button>
+    <button data-number>6</button>
+    <button class="operation"  data-operation>+</button>
+    <button data-number>7</button>
+    <button data-number>8</button>
+    <button data-number>9</button>
+    <button class="operation"  data-operation>-</button>
+    <button class="operation"  data-number>.</button>
+    <button data-number>0</button>
+    <button data-equals class="span-two result">=</button>
+</div>
+
+<div id="historyModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2><i class="fas fa-history"></i> History</h2>
+        </div>
+        <div class="modal-body">
+            <p class="placeholder">No calculation history this session.</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://kit.fontawesome.com/6377da5ebe.js" crossorigin="anonymous"></script>
+</body>
+</html>

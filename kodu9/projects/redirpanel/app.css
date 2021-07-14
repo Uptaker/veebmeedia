@@ -1,0 +1,114 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 20px 0;
+    background: rgba(144,55,73,1);
+    background: linear-gradient(180deg, rgba(43,46,74,1) 0%, rgba(83,53,74,1) 36%, rgba(144,55,73,1) 100%);
+}
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.panel {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px 0px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 11px 11px 17px -11px #53354a;
+}
+ul {
+    list-style-type: none;
+}
+
+.sites {
+    margin: 0 1px;
+    padding: 0px 50px;
+}
+.sites:nth-child(2) {
+    background-color: #f4ecfd;
+    box-sizing: border-box;
+}
+.logo {
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+.site-name {
+    color: #2b2e4a;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.site-features {
+    margin: 50px 0px 25px;
+    color: #e84545;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+.site-features-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px dashed #9094c9;
+    text-align: center;
+}
+.site-features-item:last-child {
+    border-bottom: 1px dashed #9094c9;
+}
+.redirect {
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #53354a;
+    text-decoration: none;
+    margin: 25px 0;
+    transition: all 0.2s ease-in-out;
+    width: auto;
+}
+.redirect:hover, .redirect:focus, .redirect.is-featured:hover, .redirect.is-featured:focus {
+    background-color: #2b2e4a;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+img {
+    width: 150px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.redirect.is-featured {
+    background-color: #e84545;
+}
+@media (min-width: 900px) {
+    .panel {
+        flex-direction: row;
+        justify-content: center;
+        width: auto;
+        padding: 0;
+    }
+    .sites {
+        border-bottom: 0;
+        padding: 25px 30px;
+        height: 600px;
+        width: 300px;
+        margin: auto 0;
+    }
+    .sites:nth-of-type(2) {
+        border-right: 1px solid #9094c9;
+        border-left: 1px solid #9094c9;
+        padding: 25px 30px;
+    }
+    html {
+        margin: auto;
+    }
+}

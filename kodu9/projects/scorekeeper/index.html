@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Score counter</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" >
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+    <section>
+        <div id="header">
+            <span>Score counter</span>
+        </div>
+        <div>
+            <form id="inputs">
+                <div id="setlimit">
+                    <p>
+                        Set the win limit<br>
+                        First one to reach that score wins!
+                    </p>
+                    <input type="number" name="limit" id="limit" placeholder="limit">
+                </div>
+                <button id="play" class="nav">Play!</button>
+            </form>
+        </div>
+        <div id="nav">
+            <button id="p1point" class="nav" disabled>+1</button>
+            <button id="p2point" class="nav" disabled>+1</button>
+        </div>
+        <div id="scoreboard">
+            <div id="player1" class="player">
+                <h2>Player 1</h2>
+                <h1>0</h1>
+            </div>
+            <div id="player2" class="player">
+                <h2>Player 2</h2>
+                <h1>0</h1>
+            </div>
+        </div>
+        <button id="reset" class="nav">Reset</button>
+        
+    </section>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
